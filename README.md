@@ -1,18 +1,14 @@
-<img width="1536" height="651" alt="Logo" src="https://github.com/user-attachments/assets/f63a1efe-4616-4de2-9a09-fb0c32b8b203" />
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=🎙️%20Voice%20Aura%20v1.0&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Real-time%20Voice%20AI%20%7C%20Gemini%20API%20%7C%20Vite%20%2B%20TypeScript&descAlignY=58&descSize=16" width="100%"/>
 
-# 🎙️ Voice Aura v1.0
-
-**A real-time voice AI web app powered by Google Gemini API**  
-Built with Vite + TypeScript · Deployed via Google AI Studio
-
-[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/tabrezahmed51/Voice-Aura-v1.0)
-[![Version](https://img.shields.io/badge/version-1.0-orange?style=flat-square)](https://github.com/tabrezahmed51/Voice-Aura-v1.0/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/tabrezahmed51/Voice-Aura-v1.0?style=social)](https://github.com/tabrezahmed51/Voice-Aura-v1.0/stargazers)
+[![Build](https://img.shields.io/badge/build-passing-00ffcc?style=flat-square&logo=github)](https://github.com/tabrezahmed51/Voice-Aura-v1.0)
+[![Version](https://img.shields.io/badge/version-1.0-ff9f43?style=flat-square)](https://github.com/tabrezahmed51/Voice-Aura-v1.0/releases)
+[![License](https://img.shields.io/badge/license-MIT-3a86ff?style=flat-square)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-98.4%25-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Stars](https://img.shields.io/github/stars/tabrezahmed51/Voice-Aura-v1.0?style=social)](https://github.com/tabrezahmed51/Voice-Aura-v1.0/stargazers)
 
-[🔗 Live Preview](https://ai.studio/apps/ef5ab480-df21-431e-8981-0a4588886a40) · [🐛 Report Bug](https://github.com/tabrezahmed51/Voice-Aura-v1.0/issues) · [✨ Request Feature](https://github.com/tabrezahmed51/Voice-Aura-v1.0/issues)
+**[🔗 Live Preview](https://ai.studio/apps/ef5ab480-df21-431e-8981-0a4588886a40) · [🐛 Report Bug](https://github.com/tabrezahmed51/Voice-Aura-v1.0/issues) · [✨ Request Feature](https://github.com/tabrezahmed51/Voice-Aura-v1.0/issues)**
 
 </div>
 
@@ -20,24 +16,24 @@ Built with Vite + TypeScript · Deployed via Google AI Studio
 
 ## 📌 Overview
 
-**Voice Aura v1.0** is a browser-native voice interaction application built inside [Google AI Studio](https://aistudio.google.com/). It connects directly to the **Gemini API** to deliver real-time, low-latency conversational AI — with no backend server required.
+**Voice Aura v1.0** is a browser-native voice interaction app built inside **Google AI Studio**. It connects directly to the **Gemini API** for real-time, low-latency conversational AI — no backend server required.
 
-Designed as a production-ready starter for developers building voice AI experiences, Voice Aura ships with a modular TypeScript architecture, secure environment-based API key management, and a fully customisable UI.
+A production-ready TypeScript starter for developers building voice AI experiences on the web.
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---|---|
-| 🎤 **Voice Interaction** | Speak naturally and receive instant AI-generated responses |
-| ⚡ **Gemini-Powered** | Backed by Google's latest multimodal large language model |
-| 🌐 **100% Web-Based** | Zero installs — runs entirely in the browser |
-| 🔧 **Vite + TypeScript** | Lightning-fast HMR dev environment with strict typing |
-| 🎨 **Themeable UI** | Fully customisable colour palette and layout system |
-| 🔒 **Secure Config** | API keys managed via `.env.local` — never hard-coded |
-| 📊 **Analytics Ready** | Built-in hooks for usage tracking and performance metrics |
-| 🚀 **One-Click Deploy** | Native Google AI Studio deployment support |
+| | Feature | Description |
+|---|---|---|
+| 🎤 | **Voice Interaction** | Speak naturally and receive instant AI responses |
+| ⚡ | **Gemini-Powered** | Google's latest multimodal LLM under the hood |
+| 🌐 | **100% Web-Based** | Zero installs — runs entirely in the browser |
+| 🔧 | **Vite + TypeScript** | Lightning-fast HMR dev environment |
+| 🎨 | **Themeable UI** | Fully customisable colour palette and layout |
+| 🔒 | **Secure Config** | API keys via `.env.local` — never hard-coded |
+| 📊 | **Analytics Ready** | Built-in hooks for usage tracking & metrics |
+| 🚀 | **One-Click Deploy** | Native Google AI Studio deployment support |
 
 ---
 
@@ -56,10 +52,47 @@ Designed as a production-ready starter for developers building voice AI experien
 ## 📐 System Architecture
 
 ```
-┌─────────────────────┐     ┌──────────────────────┐     ┌─────────────────┐     ┌──────────────────────┐
-│   Browser Client    │────▶│   Web Speech API      │────▶│   Gemini API    │────▶│  Google AI Studio    │
-│  Vite + TypeScript  │     │  (Voice Capture)      │     │  (AI Response)  │     │  (Deployment Host)   │
-└─────────────────────┘     └──────────────────────┘     └─────────────────┘     └──────────────────────┘
+Browser Client  ──▶  Web Speech API  ──▶  Gemini API  ──▶  AI Studio
+(Vite + TS)          (Voice Capture)      (AI Response)    (Deployment)
+```
+
+---
+
+## 📂 Folder Structure
+
+```
+Voice-Aura-v1.0/
+├── src/
+│   ├── components/
+│   │   ├── VoiceButton.tsx       # Mic trigger button
+│   │   ├── Waveform.tsx          # Animated audio waveform
+│   │   └── ResponseCard.tsx      # AI response display
+│   ├── services/
+│   │   ├── gemini.ts             # Gemini API client
+│   │   └── speech.ts             # Web Speech API wrapper
+│   ├── hooks/
+│   │   ├── useVoice.ts           # Voice recording logic
+│   │   └── useGemini.ts          # Gemini response handler
+│   ├── utils/
+│   │   ├── config.ts             # Env vars loader
+│   │   └── analytics.ts          # Usage tracking helpers
+│   ├── styles/
+│   │   ├── globals.css           # Global styles
+│   │   └── theme.css             # Colour palette variables
+│   ├── App.tsx                   # Root component
+│   └── main.ts                   # App entry point
+├── public/
+│   ├── header-image-16x9.png     # Hero banner
+│   └── favicon.ico
+├── dist/                         # Production build output
+├── index.html                    # HTML entry shell
+├── vite.config.ts                # Vite configuration
+├── tsconfig.json                 # TypeScript config
+├── package.json                  # Dependencies & scripts
+├── .env.local                    # 🔒 API key (not committed)
+├── .env.example                  # Safe template for contributors
+├── .gitignore
+└── README.md
 ```
 
 ---
@@ -68,7 +101,7 @@ Designed as a production-ready starter for developers building voice AI experien
 
 - **Node.js** ≥ 18.x
 - **npm** ≥ 9.x
-- A valid **Gemini API key** — [Get one free here](https://aistudio.google.com/app/apikey)
+- A valid **Gemini API key** — [Get one free →](https://aistudio.google.com/app/apikey)
 
 ---
 
@@ -92,80 +125,56 @@ npm run dev
 npm run build
 ```
 
-> ⚠️ **Never commit your `.env.local` file.** Ensure it is listed in `.gitignore`.
+> ⚠️ **Never commit `.env.local`** — ensure it is listed in `.gitignore`.
 
 ---
 
 ## 🌍 Deployment
 
-Voice Aura is optimised for **Google AI Studio** deployment. The production build is also fully compatible with any static hosting platform:
+| Platform | Status | Notes |
+|---|---|---|
+| Google AI Studio | ✅ Native | Recommended — zero config |
+| Vercel | ✅ Compatible | `npm run build` → deploy `dist/` |
+| Netlify | ✅ Compatible | Drag & drop `dist/` folder |
+| Cloudflare Pages | ✅ Compatible | Connect repo, set build command |
 
-| Platform | Status |
-|---|---|
-| Google AI Studio | ✅ Native support |
-| Vercel | ✅ Compatible |
-| Netlify | ✅ Compatible |
-| Cloudflare Pages | ✅ Compatible |
-
-**[🔗 View Live Preview on AI Studio](https://ai.studio/apps/ef5ab480-df21-431e-8981-0a4588886a40)**
-
----
-
-## 📂 Project Structure
-
-```
-Voice-Aura-v1.0/
-├── src/
-│   ├── components/       # UI components
-│   ├── services/         # Gemini API integration
-│   ├── utils/            # Helper utilities
-│   └── main.ts           # App entry point
-├── public/               # Static assets
-├── .env.local            # API key (not committed)
-├── vite.config.ts        # Vite configuration
-├── tsconfig.json         # TypeScript configuration
-└── package.json
-```
+**[🔗 View Live Preview on AI Studio →](https://ai.studio/apps/ef5ab480-df21-431e-8981-0a4588886a40)**
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome and appreciated!
+Contributions are welcome!
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m "feat: add your feature"`
-4. Push to your branch: `git push origin feature/your-feature-name`
-5. Open a Pull Request
+```bash
+git checkout -b feature/your-feature-name
+git commit -m "feat: describe your change"
+git push origin feature/your-feature-name
+```
 
-Please follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
-
----
-
-## 🐛 Issues & Support
-
-Found a bug or have a feature request? [Open an issue](https://github.com/tabrezahmed51/Voice-Aura-v1.0/issues) with a clear description and reproduction steps.
+Then open a **Pull Request** with a clear description of your changes.
+Follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
 
 ---
 
 ## 👨‍💻 Author
 
-**Tabrez Ahmed**
+**Tabrez Ahmed** — [@tabrezahmed51](https://github.com/tabrezahmed51)
 
-[![GitHub](https://img.shields.io/badge/GitHub-@tabrezahmed51-181717?style=flat-square&logo=github)](https://github.com/tabrezahmed51)
+Built with ❤️ using Google Gemini API & Google AI Studio.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — free to use, fork, modify, and distribute.  
-See the [LICENSE](LICENSE) file for full details.
+Released under the **[MIT License](LICENSE)** — free to fork, modify, and distribute.
 
 ---
 
 <div align="center">
 
-Made with ❤️ using [Google Gemini API](https://ai.google.dev/) · **Voice Aura v1.0**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+
+**Voice Aura v1.0** · Made with ❤️ by [Tabrez Ahmed](https://github.com/tabrezahmed51)
 
 </div>
