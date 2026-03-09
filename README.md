@@ -1,5 +1,4 @@
-<img width="1536" height="1024" alt="Logo" src="https://github.com/user-attachments/assets/4b4f1816-5e5b-41e0-bb36-d8af4b535cc3" />
-
+<img width="1536" height="651" alt="Logo" src="https://github.com/user-attachments/assets/1594e489-0e51-4a44-a96b-291ce106648a" />
 
 # 🎙️ Voice Aura v1.0  
 *A Complete Voice Webapp Developed in AI Studio by Google*
